@@ -1,0 +1,141 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>COLOR HARMONY - MAIN</title>
+      <link rel="stylesheet" href="{% static 'myapp/css/components.css' %}">
+      <link rel="stylesheet" href="{% static 'myapp/css/responsee.css' %}">
+      <!--
+      <link rel="stylesheet" href="{% static 'myapp/owl-carousel/owl.carousel.css' %}">
+      <link rel="stylesheet" href="{% static 'myapp/owl-carousel/owl.theme.css' %}">-->
+      <!-- CUSTOM STYLE -->  
+      <link rel="stylesheet" href="{% static 'myapp/css/template-style.css' %}">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="{% static 'myapp/js/jquery-1.8.3.min.js' %}"></script>
+      <script type="text/javascript" src="{% static 'myapp/js/jquery-ui.min.js' %}"></script>    
+      <script type="text/javascript" src="{% static 'myapp/js/modernizr' %}"></script>
+      <script type="text/javascript" src="{% static 'myapp/js/responsee.js' %}"></script>    
+      <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <!-- TOP NAV WITH LOGO -->  
+      <header>
+         <nav>
+            <div class="line">
+               <div class="top-nav">              
+                  <div class="logo hide-l">
+                     <a>캡스톤 <br /><strong>5조</strong></a>
+                  </div>                  
+                  <p class="nav-text">Custom menu text</p>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="right top-ul chevron">
+                        <li><a href="../myapp/main.html">메인</a>
+                        </li>
+                        <li><a href="../myapp/intro.html">프로젝트 소개</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <ul class="s-12 l-2">
+                     <li class="logo hide-s hide-m">
+                        <a>KMU Capstone<br /><strong>TEAM 5</strong></a>
+                     </li>
+                  </ul>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="top-ul chevron">
+                     <li><a href="../myapp/undecided.html">코디 검색</a></li>
+                     <li><a href="../myapp/webcam.html">카메라</a></li>
+                     </ul> 
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section>
+         <!-- CAROUSEL -->  	
+         <div id="carousel">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+               <div class="item">
+                  <img src="{% static 'myapp/img/woman3.jpg' %}" alt="">        
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9">
+                           <h2>Color and Fashion</h2>
+                        </div>
+                        <div class="s-12 l-9">
+                           <p>Fashion recommendation service that anyone can use easily
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="{% static 'myapp/img/girl.jpg' %}" alt="">      
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9">
+                           <!--<h2>Build new layout in 10 minutes!</h2>-->
+                        </div>
+                        <div class="s-12 l-9">
+                           <!--<p>Lightweight, more intuitive and useful responsive CSS framework
+                           </p>-->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="{% static 'myapp/img/girl2.jpg' %}" alt="">      
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9">
+                           <!--<h2>Fashion with COLOR</h2>-->
+                        </div>
+                        <div class="s-12 l-9">
+                           <!--<p>Best theme based on Responsee framework
+                           </p>-->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- FIRST BLOCK --> 	
+         <div id="first-block">
+            <div class="line">
+               <h2>2017 KMU CAPSTONE DESIGN</h2>
+               <p class="subtitile">SIGNAL - Be In Harmony</p>
+               <p class="subtitile">&nbsp;</p>
+            </div>
+         </div>         
+         <div id="fourth-block"></div>
+      </section>
+      <!-- FOOTER -->   
+      <footer>        
+      </footer>
+      <script type="text/javascript" src="{% static 'myapp/"owl-carousel/owl.carousel.js' %}"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {  
+           $("#owl-demo").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : false,
+         	singleItem:true
+           });
+           $("#owl-demo2").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : true,
+         	singleItem:true
+           });
+         });	
+          
+      </script> 
+   </body>
+</html>
